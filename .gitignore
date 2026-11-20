@@ -1,0 +1,20 @@
+# Data and model outputs are large and some are licensed: never commit them
+# Only the data folder's README is tracked
+data/*
+!data/README.md
+runs/
+checkpoints/
+*.pt
+*.pth
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Secrets and system files
+.env
+.DS_Store

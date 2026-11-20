@@ -1,0 +1,24 @@
+# Default settings for training, if modifying settings COPY THE FILE FIRST.
+data:
+  # One row per street segment with column names defined in src/bikeroute/schema.py
+  segments_table: data/processed/segments.csv
+  # Folder that the image paths inside the table are relative to
+  image_root: data/processed
+  image_size: 224
+  # Entire neighborhoods held out for testing
+  #TODO: Fill in once the table exists
+  holdout_neighborhoods: []
+
+model:
+  backbone: resnet50      # any torchvision ResNet; resnet18 is faster for debugging
+  pretrained: true        # start from ImageNet weights (downloads on first use)
+  num_stress_levels: 4    # Level of Traffic Stress from 1 (comfortable) to 4 (stressful)
+
+training:
+  epochs: 10
+  batch_size: 16
+  learning_rate: 1.0e-4
+  stress_loss_weight: 1.0
+  quality_loss_weight: 0.5
+  seed: 0
+  output_dir: runs/baseline

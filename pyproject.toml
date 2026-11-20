@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bikeroute"
+version = "0.0.1"
+description = "Learn how good a street is for cycling from aerial and street level imagery"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "pillow>=10.0",
+    "pyyaml>=6.0",
+    "torch>=2.1",
+    "torchvision>=0.16",
+]
+
+[project.optional-dependencies]
+# Needed only by the data collection modules in src/bikeroute/sources/
+geo = [
+    "geopandas>=0.14",
+    "osmnx>=1.9",
+    "rasterio>=1.3",
+    "shapely>=2.0",
+]
+dev = ["pytest>=7.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
