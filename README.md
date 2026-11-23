@@ -81,8 +81,13 @@ Details and terms are in [`data/README.md`](data/README.md).
 - City of Boston, [Interactive Bicycle Stress Map](https://boston.maps.arcgis.com/apps/webappviewer/index.html?id=f0be9f03ada74a028cd05e4893a22ca4)
 
 ## Related codebases / codebases I found helpful for this implementation
+
 - BCU's crash map (no longer actively maintained): [crash map repo](https://github.com/BostonCyclistsUnion/crash_map)
 - BCU's stress map: [stress map repo](https://github.com/BostonCyclistsUnion/StressMap)
+
+# NOTE ON LLM USAGE
+
+For the development of the model I used Claude Code (Opus 5.5) to debug parts of my implementation and to help me develop test cases on the synthetic data. Once we begin using real data I intend to rewrite the current tests with minimal LLM usage, but may continue to use generative AI models to help with debugging (all of which would be noted and appropriately credited).
 
 ## Licence
 
