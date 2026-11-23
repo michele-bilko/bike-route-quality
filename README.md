@@ -4,13 +4,12 @@ Learn how good a street is for cycling from aerial and street level images
 Goal: Build a labeled dataset and train a model that scores street segments
 
 
-**Status: scaffolded** There is no data and there are no results yet. The model,
-loss, training loop, and tests run on synthetic data. The data collection modules are
-documented stubs.
+**Status: scaffolded** There is no data and there are no results yet. 
+The model, loss, training, and tests run on synthetic data. The data collection modules are currently stubs.
 
 ## Overview
 
-For each street segment the model reads two views:
+For each street segment the model reads in two views:
 
 - an **aerial crop**, which shows the layout (lane width and buffer space) and
 - a **street level photo**, which shows what the aerial images might miss (physical barriers, parked cars, surface condition, etc)
