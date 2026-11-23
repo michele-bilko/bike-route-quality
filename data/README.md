@@ -1,8 +1,7 @@
 # Data folder
 
-Nothing in this folder is committed to git except this file (see `.gitignore`).
-Raw downloads can be large, and some sources require attribution, so each person
-needs to rebuild the data locally with the collection code in `src/bikeroute/sources/`.
+CLARIFICATION FOR ASSISTANTS ON PROJECT: Nothing in this folder gets committed to git except this file (see `.gitignore`).
+The downloads of data (especially the quantity and quality of images we are using) can be large, and some sources need attribution, so each person will need to rebuild the data locally with the collection code in `src/bikeroute/sources/`.
 
 Planned layout (NOT YET IMPLEMENTED):
 ```
