@@ -78,6 +78,11 @@ Details and terms are in [`data/README.md`](data/README.md).
   models for urban space perception](https://arxiv.org/abs/2208.13555)
 - Dubey et al. (2016), [Deep learning the city: Quantifying urban perception at a
   global scale](https://arxiv.org/abs/1608.01769)
+- City of Boston, [Interactive Bicycle Stress Map](https://boston.maps.arcgis.com/apps/webappviewer/index.html?id=f0be9f03ada74a028cd05e4893a22ca4)
+
+## Related codebases / codebases I found helpful for this implementation
+- BCU's crash map (no longer actively maintained): [crash map repo](https://github.com/BostonCyclistsUnion/crash_map)
+- BCU's stress map: [stress map repo](https://github.com/BostonCyclistsUnion/StressMap)
 
 ## Licence
 
