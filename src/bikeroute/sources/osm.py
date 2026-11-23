@@ -9,6 +9,8 @@ def fetch_street_segments(place: str):
     TODO: use the osmnx package to download the drivable and bikeable street
     network, keep tags that describe cycling conditions (cycleway, maxspeed,
     parking, lanes), and give every segment a stable identifier.
+    ASSIGNED TO: Michele (to implement so students assisting on project can have
+    baseline/guide to go off of)
 
     Example place: "Boston, Massachusetts, USA".
     """
