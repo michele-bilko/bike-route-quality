@@ -1,4 +1,6 @@
 # Default settings for training, if modifying settings COPY THE FILE FIRST.
+# NOTE: should probably move dropout: 0.2, hidden_size: 256, weight_decay: 0.01 (default)
+# and num_workers: 0, into this file?
 data:
   # One row per street segment with column names defined in src/bikeroute/schema.py
   segments_table: data/processed/segments.csv
@@ -13,6 +15,8 @@ model:
   backbone: resnet50      # any torchvision ResNet; resnet18 is faster for debugging
   pretrained: true        # start from ImageNet weights (downloads on first use)
   num_stress_levels: 4    # Level of Traffic Stress from 1 (comfortable) to 4 (stressful)
+  #dropout: 0.2           # share of features zeroed during training (range 0.1-0.5 usually)
+  #hidden_size: 256       # size of shared layer
 
 training:
   epochs: 10
@@ -22,3 +26,6 @@ training:
   quality_loss_weight: 0.5
   seed: 0
   output_dir: runs/baseline
+  #weight_decay: 0.01   #currently using AdamW default
+  #num_workers: 0       # parallel image loading (0 for now)
+
